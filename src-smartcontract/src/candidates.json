@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "name": "Capitão Wagner",
+    "picture": "images/Capitao.jpg",
+    "age": 45,
+    "breed": "PROS",
+    "location": "Fortaleza, Ceara"
+  },
+  {
+    "id": 1,
+    "name": "Sarto",
+    "picture": "images/sarto.jpeg",
+    "age": 50,
+    "breed": "PDT",
+    "location": "Fortaleza, Ceara"
+  }
+]

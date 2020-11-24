@@ -1,0 +1,24 @@
+version: '2.2'
+
+
+services:
+  ethereum:
+    container_name: ethereum
+    image: ethereum:alpine
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./src-smartcontract:/home/dev
+    ports:
+      - 3000:3000
+      - 3001:3001
+    
+  ganache:
+    container_name: ganache
+    image: trufflesuite/ganache-cli
+    tty: true
+    stdin_open: true
+    working_dir: /app
+    command: "--accounts 100 --debug --host 0.0.0.0"
+    ports:
+      - 8545:8545
